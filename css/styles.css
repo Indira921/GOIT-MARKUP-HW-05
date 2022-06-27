@@ -146,7 +146,7 @@ img {
 .contacts-icon-decor {
     margin-right: 10px;
     fill: #757575;
-    transition: color 250ms var(--timing-function);
+    transition: fill 250ms var(--timing-function);
 }
 .nav-decor:hover .contacts-icon-decor,
 .nav-decor:focus .contacts-icon-decor {
@@ -439,13 +439,14 @@ img {
     width: 44px;
     height: 44px;
     border-radius: 50%;
-    transition: color 250ms var(--timing-function);
+    transition: background-color 250ms var(--timing-function);
 }
 .social-link-item:not(:last-child) {
-margin-right: 10px;
+    margin-right: 10px;
 }
 .social-link .team-social-icon {
     fill: #AFB1B8;
+    transition: fill 250ms var(--timing-function);
 }
 .social-link:hover,
 .social-link:focus {
@@ -476,11 +477,9 @@ margin-right: 10px;
     padding: 0;
 }
 .clients-list-container {
-    
     width: 170px;
     margin: 0 30px 0 0;
-    height: 92px;
-    
+    height: 92px;  
 }
 .clients-list-container:last-child {
     margin-right: 0;
@@ -493,7 +492,7 @@ margin-right: 10px;
     height: 100%;
     border: 1px solid #AFB1B8;
     border-radius: 4px;
-    transition: color 250ms var(--timing-function);
+    transition: border 250ms var(--timing-function);
 }
 .clients-link:hover,
 .clients-link:focus {
@@ -696,12 +695,6 @@ margin-right: 10px;
     opacity: 1;
     transform: translateY(0);
 }
-.card-list-link:hover,
-.card-list-link:focus {
-    box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12),
-        0px 4px 4px rgba(0, 0, 0, 0.06),
-        1px 4px 6px rgba(0, 0, 0, 0.16);
-}
 .overlay {
     position: absolute;
     width:370px;
@@ -737,7 +730,14 @@ margin-right: 10px;
 .card-list-link {
     display: block;
     text-decoration: none;
-    transition: transform 250ms var(--timing-function);
+    transition: box-shadow 250ms var(--timing-function);
+}
+
+.card-list-link:hover,
+.card-list-link:focus {
+    box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12),
+        0px 4px 4px rgba(0, 0, 0, 0.06),
+        1px 4px 6px rgba(0, 0, 0, 0.16);
 }
 .card-description {
     padding: 20px 24px;
