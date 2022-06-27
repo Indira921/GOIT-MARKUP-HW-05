@@ -502,9 +502,9 @@ img {
 .clients-link:focus .clients-logo {
     fill: var(--accent-color);
 }
-
 .clients-logo {
     fill: #afb1b8;
+    transition: fill 250ms var (--timing-function);
 }
 /* FOOTER*/
 .footer {
